@@ -3,11 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/home_fragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.avoanyell.android_imdb.HomeFragment"
+        android:id="@+id/home_fragment"
+        android:name="com.avoanyell.android_imdb.ui.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/search_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.avoanyell.android_imdb.ui.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>

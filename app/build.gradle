@@ -45,6 +45,9 @@ dependencies {
 
     implementation "com.google.android.material:material:$material_version"
 
+    //Networking
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
